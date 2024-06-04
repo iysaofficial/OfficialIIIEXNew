@@ -10,6 +10,10 @@ import { News4Component } from "./components/pages/news/news.component";
 import { News5Component } from "./components/pages/news/news.component";
 import { News6Component } from "./components/pages/news/news.component";
 import { FAQComponent } from "./components/pages/faq/faq";
+import { Lowtahun} from "./components/pages/low/lowtahun";
+import { Kategori24} from "./components/pages/low/2024/2024";
+import { Jenjangofl24 } from "./components/pages/low/2024/2024";
+import { Jenjangonl24 } from "./components/pages/low/2024/2024";
 
 const routes: Routes = [
     { path: "", component: DigitalAgencyTwoComponent },
@@ -22,6 +26,10 @@ const routes: Routes = [
     { path: "news5", component: News5Component },
     { path: "news6", component: News6Component },
     { path: "FAQ", component: FAQComponent },
+    { path: "lowtahun", component: Lowtahun },
+    { path: "kategori24", component: Kategori24 },
+    { path: "jenjangofl24", component: Jenjangofl24 },
+    { path: "jenjangonl24", component: Jenjangonl24 },
 ];
 
 @NgModule({
