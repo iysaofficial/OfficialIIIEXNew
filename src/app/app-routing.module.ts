@@ -9,6 +9,9 @@ import { News3Component } from "./components/pages/news/news.component";
 import { News4Component } from "./components/pages/news/news.component";
 import { News5Component } from "./components/pages/news/news.component";
 import { News6Component } from "./components/pages/news/news.component";
+import { News7Component } from "./components/pages/news/news.component";
+import { News8Component } from "./components/pages/news/news.component";
+import { News9Component } from "./components/pages/news/news.component";
 import { FAQComponent } from "./components/pages/faq/faq";
 import { Lowtahun} from "./components/pages/low/lowtahun";
 import { Kategori24} from "./components/pages/low/2024/2024";
@@ -25,6 +28,9 @@ const routes: Routes = [
     { path: "news4", component: News4Component },
     { path: "news5", component: News5Component },
     { path: "news6", component: News6Component },
+    { path: "news7", component: News7Component },
+    { path: "news8", component: News8Component },
+    { path: "news9", component: News9Component },
     { path: "FAQ", component: FAQComponent },
     { path: "lowtahun", component: Lowtahun },
     { path: "kategori24", component: Kategori24 },

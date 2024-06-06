@@ -77,3 +77,36 @@ export class News6Component implements OnInit {
 
     ngOnInit() {}
 }
+// NEWS 7
+@Component({
+    selector: "app-news7",
+    templateUrl: "./news7.component.html",
+    styleUrls: ["./news.component.scss"],
+})
+export class News7Component implements OnInit {
+    constructor() {}
+
+    ngOnInit() {}
+}
+// NEWS 8
+@Component({
+    selector: "app-news8",
+    templateUrl: "./news8.component.html",
+    styleUrls: ["./news.component.scss"],
+})
+export class News8Component implements OnInit {
+    constructor() {}
+
+    ngOnInit() {}
+}
+// NEWS 9
+@Component({
+    selector: "app-news9",
+    templateUrl: "./news9.component.html",
+    styleUrls: ["./news.component.scss"],
+})
+export class News9Component implements OnInit {
+    constructor() {}
+
+    ngOnInit() {}
+}
