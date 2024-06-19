@@ -17,6 +17,9 @@ import { Lowtahun} from "./components/pages/low/lowtahun";
 import { Kategori24} from "./components/pages/low/2024/2024";
 import { Jenjangofl24 } from "./components/pages/low/2024/2024";
 import { Jenjangonl24 } from "./components/pages/low/2024/2024";
+import { Kategori23} from "./components/pages/low/2023/2023";
+import { Jenjangofl23 } from "./components/pages/low/2023/2023";
+import { Jenjangonl23 } from "./components/pages/low/2023/2023";
 
 const routes: Routes = [
     { path: "", component: DigitalAgencyTwoComponent },
@@ -36,6 +39,9 @@ const routes: Routes = [
     { path: "kategori24", component: Kategori24 },
     { path: "jenjangofl24", component: Jenjangofl24 },
     { path: "jenjangonl24", component: Jenjangonl24 },
+    { path: "kategori23", component: Kategori23 },
+    { path: "jenjangofl23", component: Jenjangofl23 },
+    { path: "jenjangonl23", component: Jenjangonl23 },
 ];
 
 @NgModule({
