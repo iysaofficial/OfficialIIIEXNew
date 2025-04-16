@@ -8,6 +8,8 @@ import { FooterComponent } from "../app/components/layout/footer/footer.componen
 import { DigitalAgencyTwoComponent } from "../app/components/pages/digital-agency-two/digital-agency-two.component";
 import { DigitalAgencyThreeComponent } from "../app/components/pages/digital-agency-three/digital-agency-three.component";
 import { FAQComponent } from "../app/components/pages/faq/faq";
+import { SwiperModule } from 'swiper/angular';
+import { ImageSliderComponent } from './components/layout/image-slider/image-slider.component';
 
 @NgModule({
     declarations: [
@@ -17,8 +19,9 @@ import { FAQComponent } from "../app/components/pages/faq/faq";
         DigitalAgencyTwoComponent,
         DigitalAgencyThreeComponent,
         FAQComponent,
+        ImageSliderComponent,
     ],
-    imports: [BrowserModule, AppRoutingModule, CommonModule],
+    imports: [BrowserModule, AppRoutingModule, CommonModule, SwiperModule],
     providers: [],
     bootstrap: [AppComponent],
 })
