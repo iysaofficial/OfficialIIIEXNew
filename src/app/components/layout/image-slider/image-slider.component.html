@@ -1,9 +1,10 @@
 <swiper
   [spaceBetween]="0"
-  [slidesPerView]="5"
   [loop]="true"
   [pagination]="{ clickable: true }"
   [navigation]="true"
+  [breakpoints]="breakpointsConfig"
+
   class="mySwiper"
 >
   <ng-template swiperSlide *ngFor="let img of images">

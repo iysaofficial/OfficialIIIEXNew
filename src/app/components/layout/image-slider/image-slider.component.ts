@@ -18,4 +18,12 @@ export class ImageSliderComponent {
     'assets/img/Slider/9.jpg',
     'assets/img/Slider/10.jpg',
   ];
+
+  breakpointsConfig = {
+    0: { slidesPerView: 2 },
+    640: { slidesPerView: 4 },
+    1024: { slidesPerView: 5 }
+  };
 }
+
+
