@@ -14,6 +14,9 @@ import { News8Component } from "./components/pages/news/news.component";
 import { News9Component } from "./components/pages/news/news.component";
 import { FAQComponent } from "./components/pages/faq/faq";
 import { Lowtahun} from "./components/pages/low/lowtahun";
+import { Kategori26} from "./components/pages/low/2026/2026";
+import { Jenjangofl26 } from "./components/pages/low/2026/2026";
+import { Jenjangonl26 } from "./components/pages/low/2026/2026";
 import { Kategori25} from "./components/pages/low/2025/2025";
 import { Jenjangofl25 } from "./components/pages/low/2025/2025";
 import { Jenjangonl25 } from "./components/pages/low/2025/2025";
@@ -23,6 +26,9 @@ import { Jenjangonl24 } from "./components/pages/low/2024/2024";
 import { Kategori23} from "./components/pages/low/2023/2023";
 import { Jenjangofl23 } from "./components/pages/low/2023/2023";
 import { Jenjangonl23 } from "./components/pages/low/2023/2023";
+import { CertKategori26 } from "./components/pages/certificate/2026/cert-2026";
+import { CertKategori25 } from "./components/pages/certificate/2025/cert-2025";
+import { CertKategori24 } from "./components/pages/certificate/2024/cert-2024";
 
 const routes: Routes = [
     { path: "", component: DigitalAgencyTwoComponent },
@@ -39,6 +45,9 @@ const routes: Routes = [
     { path: "news9", component: News9Component },
     { path: "FAQ", component: FAQComponent },
     { path: "lowtahun", component: Lowtahun },
+    { path: "kategori26", component: Kategori26 },
+    { path: "jenjangofl26", component: Jenjangofl26 },
+    { path: "jenjangonl26", component: Jenjangonl26 },
     { path: "kategori25", component: Kategori25 },
     { path: "jenjangofl25", component: Jenjangofl25 },
     { path: "jenjangonl25", component: Jenjangonl25 },
@@ -48,6 +57,9 @@ const routes: Routes = [
     { path: "kategori23", component: Kategori23 },
     { path: "jenjangofl23", component: Jenjangofl23 },
     { path: "jenjangonl23", component: Jenjangonl23 },
+    { path: "cert-kategori26", component: CertKategori26 },
+    { path: "cert-kategori25", component: CertKategori25 },
+    { path: "cert-kategori24", component: CertKategori24 },
 ];
 
 @NgModule({
