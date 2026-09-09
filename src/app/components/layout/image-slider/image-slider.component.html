@@ -1,13 +1,16 @@
-<swiper
-  [spaceBetween]="0"
-  [loop]="true"
-  [pagination]="{ clickable: true }"
-  [navigation]="true"
-  [breakpoints]="breakpointsConfig"
-
-  class="mySwiper"
->
-  <ng-template swiperSlide *ngFor="let img of images">
-    <img [src]="img" alt="slider" style="width: 100%;" />
-  </ng-template>
-</swiper>
+<div class="slider-container-wrapper">
+  <swiper
+    [spaceBetween]="15"
+    [loop]="true"
+    [pagination]="{ clickable: true }"
+    [navigation]="true"
+    [breakpoints]="breakpointsConfig"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide *ngFor="let img of images">
+      <div class="slide-card">
+        <img [src]="img" alt="Gallery photo" class="slide-img" />
+      </div>
+    </ng-template>
+  </swiper>
+</div>
