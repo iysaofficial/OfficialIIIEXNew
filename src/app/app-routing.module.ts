@@ -29,6 +29,7 @@ import { Jenjangonl23 } from "./components/pages/low/2023/2023";
 import { CertKategori26 } from "./components/pages/certificate/2026/cert-2026";
 import { CertKategori25 } from "./components/pages/certificate/2025/cert-2025";
 import { CertKategori24 } from "./components/pages/certificate/2024/cert-2024";
+import { KurasiTahunComponent } from "./components/pages/kurasi/kurasi-tahun.component";
 
 const routes: Routes = [
     { path: "", component: DigitalAgencyTwoComponent },
@@ -60,6 +61,19 @@ const routes: Routes = [
     { path: "cert-kategori26", component: CertKategori26 },
     { path: "cert-kategori25", component: CertKategori25 },
     { path: "cert-kategori24", component: CertKategori24 },
+    /*
+      Kurasi: daftar berkas satu edisi, dibaca dari dasbor.
+
+      Tahunnya parameter, bukan satu rute per edisi seperti `kategori26` dan
+      `kategori25` di atas — daftar berkasnya datang dari API, jadi edisi baru
+      tidak menuntut satu baris pun di berkas ini.
+
+      Dua alamat menunjuk komponen yang sama: tautan yang dibagikan orang
+      memakai ejaan "Curation" seperti tulisan di menu, sementara alamat
+      bakunya huruf kecil.
+    */
+    { path: "kurasi/:tahun", component: KurasiTahunComponent },
+    { path: "Curation/:tahun", component: KurasiTahunComponent },
 ];
 
 @NgModule({

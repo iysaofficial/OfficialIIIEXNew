@@ -10,6 +10,7 @@ import { DigitalAgencyThreeComponent } from "../app/components/pages/digital-age
 import { FAQComponent } from "../app/components/pages/faq/faq";
 import { SwiperModule } from 'swiper/angular';
 import { ImageSliderComponent } from './components/layout/image-slider/image-slider.component';
+import { KurasiTahunComponent } from './components/pages/kurasi/kurasi-tahun.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,16 @@ import { ImageSliderComponent } from './components/layout/image-slider/image-sli
         DigitalAgencyThreeComponent,
         FAQComponent,
         ImageSliderComponent,
+        /*
+          Halaman kurasi HARUS dideklarasikan di sini, tidak seperti halaman
+          lain di `app-routing` yang tidak. Halaman-halaman itu HTML statis;
+          di Ivy sebuah komponen tanpa NgModule tetap bisa dipasang router,
+          cuma cakupan direktifnya kosong. Halaman ini memakai `*ngIf` dan
+          `*ngFor`, dan keduanya datang dari `CommonModule` lewat modul ini —
+          tanpa dideklarasikan, keduanya diam-diam tidak berlaku dan yang
+          tampil cuma halaman kosong.
+        */
+        KurasiTahunComponent,
     ],
     imports: [BrowserModule, AppRoutingModule, CommonModule, SwiperModule],
     providers: [],
